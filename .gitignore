@@ -11,5 +11,6 @@ CTestTestfile.cmake
 _deps
 out
 .cmake
+.cache
 .ninja_deps
 .ninja_log

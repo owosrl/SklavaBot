@@ -1,6 +1,7 @@
 #ifndef HPP_UTILS
 #define HPP_UTILS
 
+#include <iostream>
 #include <string>
 #include <cstdint>
 

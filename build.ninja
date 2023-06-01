@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: SklaviaBot
+# Project: SklavaBot
 # Configurations: 
 # =============================================================================
 
@@ -36,38 +36,38 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/polina/Documents/Code/C/SklaviaBot/
 # =============================================================================
-# Object build statements for EXECUTABLE target sklaviabot
+# Object build statements for EXECUTABLE target sklavabot
 
 
 #############################################
-# Order-only phony target for sklaviabot
+# Order-only phony target for sklavabot
 
-build cmake_object_order_depends_target_sklaviabot: phony || cmake_object_order_depends_target_Utils
+build cmake_object_order_depends_target_sklavabot: phony || cmake_object_order_depends_target_Utils
 
-build CMakeFiles/sklaviabot.dir/main.cpp.o: CXX_COMPILER__sklaviabot_unscanned_ /Users/polina/Documents/Code/C/SklaviaBot/main.cpp || cmake_object_order_depends_target_sklaviabot
+build CMakeFiles/sklavabot.dir/main.cpp.o: CXX_COMPILER__sklavabot_unscanned_ /Users/polina/Documents/Code/C/SklaviaBot/main.cpp || cmake_object_order_depends_target_sklavabot
   DEFINES = -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
-  DEP_FILE = CMakeFiles/sklaviabot.dir/main.cpp.o.d
+  DEP_FILE = CMakeFiles/sklavabot.dir/main.cpp.o.d
   FLAGS = -Wno-deprecated-declarations -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/usr/local/include -I/opt/homebrew/opt/openssl@3/include -I/Users/polina/Documents/Code/C/SklaviaBot/lib/include -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/sklaviabot.dir
-  OBJECT_FILE_DIR = CMakeFiles/sklaviabot.dir
+  OBJECT_DIR = CMakeFiles/sklavabot.dir
+  OBJECT_FILE_DIR = CMakeFiles/sklavabot.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target sklaviabot
+# Link build statements for EXECUTABLE target sklavabot
 
 
 #############################################
-# Link the executable out/sklaviabot
+# Link the executable out/sklavabot
 
-build out/sklaviabot: CXX_EXECUTABLE_LINKER__sklaviabot_ CMakeFiles/sklaviabot.dir/main.cpp.o | lib/libUtils.a /opt/homebrew/opt/openssl@3/lib/libssl.dylib /opt/homebrew/opt/openssl@3/lib/libcrypto.dylib /opt/homebrew/lib/libboost_system-mt.dylib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libcurl.tbd /usr/local/lib/libTgBot.a || lib/libUtils.a
+build out/sklavabot: CXX_EXECUTABLE_LINKER__sklavabot_ CMakeFiles/sklavabot.dir/main.cpp.o | lib/libUtils.a /opt/homebrew/opt/openssl@3/lib/libssl.dylib /opt/homebrew/opt/openssl@3/lib/libcrypto.dylib /opt/homebrew/lib/libboost_system-mt.dylib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libcurl.tbd /usr/local/lib/libTgBot.a || lib/libUtils.a
   FLAGS = -Wno-deprecated-declarations -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   LINK_LIBRARIES = lib/libUtils.a  /opt/homebrew/opt/openssl@3/lib/libssl.dylib  /opt/homebrew/opt/openssl@3/lib/libcrypto.dylib  /opt/homebrew/lib/libboost_system-mt.dylib  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libcurl.tbd  /usr/local/lib/libTgBot.a
-  OBJECT_DIR = CMakeFiles/sklaviabot.dir
+  OBJECT_DIR = CMakeFiles/sklavabot.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = out/sklaviabot
-  TARGET_PDB = sklaviabot.dbg
+  TARGET_FILE = out/sklavabot
+  TARGET_PDB = sklavabot.dbg
 
 
 #############################################
@@ -171,7 +171,7 @@ build Utils: phony lib/libUtils.a
 
 build libUtils.a: phony lib/libUtils.a
 
-build sklaviabot: phony out/sklaviabot
+build sklavabot: phony out/sklavabot
 
 # =============================================================================
 # Folder targets.
@@ -181,7 +181,7 @@ build sklaviabot: phony out/sklaviabot
 #############################################
 # Folder: /Users/polina/Documents/Code/C/SklaviaBot
 
-build all: phony out/sklaviabot lib/all
+build all: phony out/sklavabot lib/all
 
 # =============================================================================
 

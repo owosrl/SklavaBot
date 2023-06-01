@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.8)
 
-project(SklaviaBot CXX)
+project(SklavaBot CXX)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations")
@@ -21,5 +21,5 @@ set(TGBOT_LIBRARIES /usr/local/lib/libTgBot.a)
 
 add_subdirectory(lib)
 
-add_executable(sklaviabot main.cpp)
-target_link_libraries(sklaviabot Utils ${CMAKE_THREAD_LIBS_INIT} ${OPENSSL_LIBRARIES} ${Boost_LIBRARIES} ${CURL_LIBRARIES} ${TGBOT_LIBRARIES})
+add_executable(sklavabot main.cpp)
+target_link_libraries(sklavabot Utils ${CMAKE_THREAD_LIBS_INIT} ${OPENSSL_LIBRARIES} ${Boost_LIBRARIES} ${CURL_LIBRARIES} ${TGBOT_LIBRARIES})
