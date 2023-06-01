@@ -14,3 +14,4 @@ out
 .cache
 .ninja_deps
 .ninja_log
+lib/*.a
