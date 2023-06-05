@@ -13,10 +13,9 @@ Telegram Bot in C++ with TgBot
 - CMake
 - Ninja
 - GCC or Clang
-- Curl
+- CURL
 - Boost Lib
-- OpenSSL
-- Curl
+- OpenSSL 
 - Tesseract
 - Leptonica
 
