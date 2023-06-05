@@ -22,7 +22,9 @@ int main(int argc, char *argv[]) {
     }
 
     TgBot::Bot bot(std::string(BOT_TOKEN));
+    bot.getApi().deleteWebhook(true);
     
+
     register_handlers(&bot);
 
     while(true){
