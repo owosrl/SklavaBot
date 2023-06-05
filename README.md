@@ -6,7 +6,8 @@ Telegram Bot in C++ with TgBot
 - `/start` : _starts bot_;
 - `/help` : _print help message with command list_;
 - `/info` : _print informations about Compile System_;
-- `/ocr` : _Optical Character Recognition with Tesseract_
+- `/ocr` : _Optical Character Recognition with Tesseract_;
+- `/metar <ICAO Code>` : _get METAR informations_;
 
 
 **Requirements**:
@@ -15,7 +16,8 @@ Telegram Bot in C++ with TgBot
 - GCC or Clang
 - CURL
 - Boost Lib
-- OpenSSL 
+- OpenSSL
+- JsonCpp
 - Tesseract
 - Leptonica
 
