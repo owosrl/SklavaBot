@@ -1,7 +1,10 @@
 #include <iostream>
 #include <cstdlib>
+#include <chrono>
 #include <string>
 #include <tgbot/tgbot.h>
+#include <boost/date_time/posix_time/posix_time.hpp>
+#include <boost/date_time/posix_time/conversion.hpp>
 
 #include "utils.hpp"
 #include "commands.hpp"
@@ -22,14 +25,17 @@ int main(int argc, char *argv[]) {
     
     register_handlers(&bot);
 
-    try {
-        std::cout << "Bot username: " << bot.getApi().getMe()->username.c_str() << "\n";
-        TgBot::TgLongPoll longPoll(bot);
-        while (true) {
-            longPoll.start();
+    while(true){
+        try {
+            std::cout << "Bot username: " << bot.getApi().getMe()->username.c_str() << "\n";
+            TgBot::TgLongPoll longPoll(bot);
+            while (true) {
+                longPoll.start();
+            }
+        } catch (TgBot::TgException& e) {
+            log_cmd(e.what(), "TG_BOT", boost::posix_time::to_time_t(boost::posix_time::second_clock::universal_time()), LOG::Error);
+            bot.getApi().deleteWebhook(true);
         }
-    } catch (TgBot::TgException& e) {
-        std::cerr << "error: " << e.what() << "\n";
     }
 
     flush();
