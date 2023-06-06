@@ -7,11 +7,28 @@
 
 #include "utils.hpp"
 
+
+
+/**
+ * flush()
+ * @brief Flush stdin
+ */
 void flush() {
     std::cout << "\n" << std::flush;
     return;
 }
 
+
+
+/**
+ * log_cmd(command, user, timestamp, log_type)
+ * @brief Function to print a better log 
+ *
+ * @param command Command string
+ * @param user User or entity who sent log
+ * @param timestamp Unix epoch of when log was generated
+ * @param log_type Log type, see LOG namespace
+ */
 void log_cmd(std::string command, std::string user, std::int32_t timestamp, const std::string log_type) {
     typedef boost::date_time::c_local_adjustor<boost::posix_time::ptime> local_adj;
 

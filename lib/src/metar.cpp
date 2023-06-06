@@ -6,11 +6,32 @@
 
 #include "utils.hpp"
 
+/**
+ * writeFunction(*ptr, size, nmemb, *data)
+ * @brief Write function for CURL
+ *
+ * @param *ptr Pointer to response data 
+ * @param size Always 1
+ * @param nmemb Response data size
+ * @param *data Pointer to destination variable
+ *
+ * @return size*nmemb Size of data
+ */
 size_t writeFunction(void *ptr, size_t size, size_t nmemb, std::string* data) {
     data->append((char*) ptr, size * nmemb);
     return size * nmemb;
 }
 
+
+
+/**
+ * getMetar(ICAO)
+ * @brief Get METAR information from stations
+ *
+ * @param ICAO The station's ICAO code
+ * 
+ * @return metarInfo Station response
+ */
 std::string getMetar(std::string ICAO) {
     std::string metarInfo;
     const std::string url = "https://tgftp.nws.noaa.gov/data/observations/metar/stations/"+ICAO+".TXT";

@@ -8,6 +8,15 @@
 
 #include "utils.hpp"
 
+
+
+/**
+ * getTextFromImage(*image)
+ *
+ * @param *image Pointer to a Pix object of leptonica
+ *
+ * @return outText OCR String
+ */
 std::string getTextFromImage(Pix *image) {
     char *outText;
     tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();

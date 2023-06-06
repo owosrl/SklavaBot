@@ -14,6 +14,9 @@
 #include "ocr.hpp"
 #include "metar.hpp"
 
+/**
+* @brief Telegram parse mode
+*/
 const std::string PARSE_MODE("Markdown");
 
 const std::string HELP_MESSAGE =
@@ -65,26 +68,54 @@ const std::string INFO_MESSAGE =
     #endif
             "_\n";
 
-void register_handlers(TgBot::Bot *bot) {
-    
-    /* WRITE HERE YOUR COMMAND HANDLERS */
+/**
+ * register_handlers(*bot)
+ * @brief Register all the handlers for bot commands
+ *
+ * @param *bot Pointer to TgBot::Bot object
+ * @return void
+ */
+void register_handlers(TgBot::Bot *bot) {    
 
-    // start command
+    /**
+     * /start
+     * @brief Start BOT
+     */
     bot->getEvents().onCommand("start", [bot](TgBot::Message::Ptr message) {
         log_cmd("start", message->from->username, message->date, LOG::Info);
         bot->getApi().sendMessage(message->chat->id, "Hi!");
     });
 
+
+
+    /**
+     * /help 
+     * @brief Print help message
+     */
     bot->getEvents().onCommand("help", [bot](TgBot::Message::Ptr message) {
         log_cmd("help", message->from->username, message->date, LOG::Info);
         bot->getApi().sendMessage(message->chat->id, HELP_MESSAGE, false, 0, nullptr, PARSE_MODE);
     });
 
+
+    
+    /**
+     * /info
+     * @brief Print help message
+     */
     bot->getEvents().onCommand("info", [bot](TgBot::Message::Ptr message) {
         log_cmd("info", message->from->username, message->date, LOG::Info);
         bot->getApi().sendMessage(message->chat->id, INFO_MESSAGE, false, 0, nullptr, PARSE_MODE);
     });
 
+
+
+    /**
+     * /ocr
+     * @brief optical character recognition 
+     *
+     * @param <image> As a reply 
+     */
     bot->getEvents().onCommand("ocr", [bot](TgBot::Message::Ptr message) {
         log_cmd("ocr", message->from->username, message->date, LOG::Info);
 
@@ -112,6 +143,14 @@ void register_handlers(TgBot::Bot *bot) {
         bot->getApi().sendMessage(message->chat->id, getTextFromImage(pixImage));
     });
 
+
+
+    /**
+     * /metar 
+     * @brief Print METAR informations from station
+     *
+     * @param <icao> ICAO code for station
+     */
     bot->getEvents().onCommand("metar", [bot](TgBot::Message::Ptr message) {
         log_cmd("metar", message->from->username, message->date, LOG::Info);
 

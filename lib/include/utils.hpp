@@ -5,10 +5,32 @@
 #include <string>
 #include <cstdint>
 
+
+/**
+ * flush()
+ * @brief Flush stdin
+ */
 void flush();
 
+
+
+/**
+ * log_cmd(command, user, timestamp, log_type)
+ * @brief Function to print a better log 
+ *
+ * @param command Command string
+ * @param user User or entity who sent log
+ * @param timestamp Unix epoch of when log was generated
+ * @param log_type Log type, see LOG namespace
+ */
 void log_cmd(std::string command, std::string user, std::int32_t timestamp, const std::string log_type);
 
+
+
+/**
+ * LOG namespace
+ * @brief Defined LOG types
+ */
 namespace LOG {
 
     #define FG_BRED     "\033[1;31m"
