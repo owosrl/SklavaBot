@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tgbot-cpp: lib/include/utils.hpp Source File</title>
+<title>SklavaBot: lib/include/utils.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">tgbot-cpp
+   <div id="projectname">SklavaBot<span id="projectnumber">&#160;0.1.0</span>
    </div>
+   <div id="projectbrief">Telegram Bot in C++</div>
   </td>
  </tr>
  </tbody>
@@ -108,16 +109,16 @@ $(document).ready(function(){initNavTree('utils_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="namespace_l_o_g.html">   36</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_l_o_g.html">LOG</a> {</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#define FG_BRED &quot;\033[1;31m&quot;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define FG_BYELLOW &quot;\033[1;33m&quot;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#define FG_BGREEN &quot;\033[1;32m&quot;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define FG_BWHITE &quot;\033[1;37m&quot;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#define RESET &quot;\033[0m&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="utils_8hpp.html#a72c6f9d7f13cd04e394d23674df43329">   38</a></span><span class="preprocessor">#define FG_BRED &quot;\033[1;31m&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="utils_8hpp.html#a9bdd773ce0cfa148748586203ac855c4">   39</a></span><span class="preprocessor">#define FG_BYELLOW &quot;\033[1;33m&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="utils_8hpp.html#aaae4d017e4730599007157873c521cf4">   40</a></span><span class="preprocessor">#define FG_BGREEN &quot;\033[1;32m&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="utils_8hpp.html#ae83a93b0a93e9b9def233e805317fe30">   41</a></span><span class="preprocessor">#define FG_BWHITE &quot;\033[1;37m&quot;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="utils_8hpp.html#ab702106cf3b3e96750b6845ded4e0299">   42</a></span><span class="preprocessor">#define RESET &quot;\033[0m&quot;</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="namespace_l_o_g.html#a57976ff72e0bdfd4af11071cabf45219">   44</a></span><span class="keyword">const</span> std::string <a class="code hl_variable" href="namespace_l_o_g.html#a57976ff72e0bdfd4af11071cabf45219">Info</a> = FG_BWHITE <span class="stringliteral">&quot;[INFO]&quot;</span> RESET;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespace_l_o_g.html#a03a18e93289af2bb89b0a58f65e81fd2">   45</a></span><span class="keyword">const</span> std::string <a class="code hl_variable" href="namespace_l_o_g.html#a03a18e93289af2bb89b0a58f65e81fd2">Warn</a> = FG_BYELLOW <span class="stringliteral">&quot;[WARN]&quot;</span> RESET;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespace_l_o_g.html#a9ec643ceee1bb9728a0a24afd210d392">   46</a></span><span class="keyword">const</span> std::string <a class="code hl_variable" href="namespace_l_o_g.html#a9ec643ceee1bb9728a0a24afd210d392">Error</a> = FG_BRED <span class="stringliteral">&quot;[ERROR]&quot;</span> RESET;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespace_l_o_g.html#a9fb5eebd5d4fff541edd5a7d6ea9c17d">   47</a></span><span class="keyword">const</span> std::string <a class="code hl_variable" href="namespace_l_o_g.html#a9fb5eebd5d4fff541edd5a7d6ea9c17d">Debug</a> = FG_BGREEN <span class="stringliteral">&quot;[DEBUG]&quot;</span> RESET;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="namespace_l_o_g.html#a57976ff72e0bdfd4af11071cabf45219">   44</a></span><span class="keyword">const</span> std::string <a class="code hl_variable" href="namespace_l_o_g.html#a57976ff72e0bdfd4af11071cabf45219">Info</a> = <a class="code hl_define" href="utils_8hpp.html#ae83a93b0a93e9b9def233e805317fe30">FG_BWHITE</a> <span class="stringliteral">&quot;[INFO]&quot;</span> <a class="code hl_define" href="utils_8hpp.html#ab702106cf3b3e96750b6845ded4e0299">RESET</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespace_l_o_g.html#a03a18e93289af2bb89b0a58f65e81fd2">   45</a></span><span class="keyword">const</span> std::string <a class="code hl_variable" href="namespace_l_o_g.html#a03a18e93289af2bb89b0a58f65e81fd2">Warn</a> = <a class="code hl_define" href="utils_8hpp.html#a9bdd773ce0cfa148748586203ac855c4">FG_BYELLOW</a> <span class="stringliteral">&quot;[WARN]&quot;</span> <a class="code hl_define" href="utils_8hpp.html#ab702106cf3b3e96750b6845ded4e0299">RESET</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespace_l_o_g.html#a9ec643ceee1bb9728a0a24afd210d392">   46</a></span><span class="keyword">const</span> std::string <a class="code hl_variable" href="namespace_l_o_g.html#a9ec643ceee1bb9728a0a24afd210d392">Error</a> = <a class="code hl_define" href="utils_8hpp.html#a72c6f9d7f13cd04e394d23674df43329">FG_BRED</a> <span class="stringliteral">&quot;[ERROR]&quot;</span> <a class="code hl_define" href="utils_8hpp.html#ab702106cf3b3e96750b6845ded4e0299">RESET</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespace_l_o_g.html#a9fb5eebd5d4fff541edd5a7d6ea9c17d">   47</a></span><span class="keyword">const</span> std::string <a class="code hl_variable" href="namespace_l_o_g.html#a9fb5eebd5d4fff541edd5a7d6ea9c17d">Debug</a> = <a class="code hl_define" href="utils_8hpp.html#aaae4d017e4730599007157873c521cf4">FG_BGREEN</a> <span class="stringliteral">&quot;[DEBUG]&quot;</span> <a class="code hl_define" href="utils_8hpp.html#ab702106cf3b3e96750b6845ded4e0299">RESET</a>;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} <span class="comment">// namespace LOG</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
@@ -129,13 +130,18 @@ $(document).ready(function(){initNavTree('utils_8hpp_source.html',''); initResiz
 <div class="ttc" id="anamespacetools_html"><div class="ttname"><a href="namespacetools.html">tools</a></div><div class="ttdef"><b>Definition</b> <a href="metar_8hpp_source.html#l00006">metar.hpp:6</a></div></div>
 <div class="ttc" id="anamespacetools_html_a3f6f047547787e96a755d1d0d0eafc85"><div class="ttname"><a href="namespacetools.html#a3f6f047547787e96a755d1d0d0eafc85">tools::log_cmd</a></div><div class="ttdeci">void log_cmd(std::string command, std::string user, std::int32_t timestamp, const std::string log_type)</div><div class="ttdoc">Function to print a better log.</div><div class="ttdef"><b>Definition</b> <a href="utils_8cpp_source.html#l00017">utils.cpp:17</a></div></div>
 <div class="ttc" id="anamespacetools_html_abee7c7d8f488dd436c9c7e68d3f5b984"><div class="ttname"><a href="namespacetools.html#abee7c7d8f488dd436c9c7e68d3f5b984">tools::flush</a></div><div class="ttdeci">void flush()</div><div class="ttdoc">Flush stdin.</div><div class="ttdef"><b>Definition</b> <a href="utils_8cpp_source.html#l00012">utils.cpp:12</a></div></div>
+<div class="ttc" id="autils_8hpp_html_a72c6f9d7f13cd04e394d23674df43329"><div class="ttname"><a href="utils_8hpp.html#a72c6f9d7f13cd04e394d23674df43329">FG_BRED</a></div><div class="ttdeci">#define FG_BRED</div><div class="ttdef"><b>Definition</b> <a href="utils_8hpp_source.html#l00038">utils.hpp:38</a></div></div>
+<div class="ttc" id="autils_8hpp_html_a9bdd773ce0cfa148748586203ac855c4"><div class="ttname"><a href="utils_8hpp.html#a9bdd773ce0cfa148748586203ac855c4">FG_BYELLOW</a></div><div class="ttdeci">#define FG_BYELLOW</div><div class="ttdef"><b>Definition</b> <a href="utils_8hpp_source.html#l00039">utils.hpp:39</a></div></div>
+<div class="ttc" id="autils_8hpp_html_aaae4d017e4730599007157873c521cf4"><div class="ttname"><a href="utils_8hpp.html#aaae4d017e4730599007157873c521cf4">FG_BGREEN</a></div><div class="ttdeci">#define FG_BGREEN</div><div class="ttdef"><b>Definition</b> <a href="utils_8hpp_source.html#l00040">utils.hpp:40</a></div></div>
+<div class="ttc" id="autils_8hpp_html_ab702106cf3b3e96750b6845ded4e0299"><div class="ttname"><a href="utils_8hpp.html#ab702106cf3b3e96750b6845ded4e0299">RESET</a></div><div class="ttdeci">#define RESET</div><div class="ttdef"><b>Definition</b> <a href="utils_8hpp_source.html#l00042">utils.hpp:42</a></div></div>
+<div class="ttc" id="autils_8hpp_html_ae83a93b0a93e9b9def233e805317fe30"><div class="ttname"><a href="utils_8hpp.html#ae83a93b0a93e9b9def233e805317fe30">FG_BWHITE</a></div><div class="ttdeci">#define FG_BWHITE</div><div class="ttdef"><b>Definition</b> <a href="utils_8hpp_source.html#l00041">utils.hpp:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5a30104352ef4255dc24354b02eb2d20.html">include</a></li><li class="navelem"><a class="el" href="utils_8hpp.html">utils.hpp</a></li>
-    <li class="footer">Generated on Tue Jun 6 2023 13:09:51 for tgbot-cpp by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Tue Jun 6 2023 18:20:31 for SklavaBot by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

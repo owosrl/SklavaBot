@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['register_5fhandlers_0',['register_handlers',['../namespace_bot.html#a343f4e2a25f19b440a2a820719692934',1,'Bot']]]
+  ['ocr_2ecpp_0',['ocr.cpp',['../ocr_8cpp.html',1,'']]],
+  ['ocr_2ehpp_1',['ocr.hpp',['../ocr_8hpp.html',1,'']]]
 ];

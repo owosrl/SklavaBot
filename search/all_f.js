@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['warn_0',['Warn',['../namespace_l_o_g.html#a03a18e93289af2bb89b0a58f65e81fd2',1,'LOG']]],
-  ['writefunction_1',['writeFunction',['../namespacetools.html#ab2c9b3bdc1252b1bab2a741f94bd5521',1,'tools']]]
+  ['sklavabot_0',['SklavaBot',['../index.html',1,'']]],
+  ['stringify_1',['STRINGIFY',['../_c_make_c_x_x_compiler_id_8cpp.html#a43e1cad902b6477bec893cb6430bd6c8',1,'CMakeCXXCompilerId.cpp']]],
+  ['stringify_5fhelper_2',['STRINGIFY_HELPER',['../_c_make_c_x_x_compiler_id_8cpp.html#a2ae9b72bb13abaabfcf2ee0ba7d3fa1d',1,'CMakeCXXCompilerId.cpp']]]
 ];

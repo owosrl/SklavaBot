@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['info_0',['Info',['../namespace_l_o_g.html#a57976ff72e0bdfd4af11071cabf45219',1,'LOG']]],
-  ['info_5fmessage_1',['INFO_MESSAGE',['../commands_8cpp.html#a0a0dc29d73e08ce868326e29fdc286f2',1,'commands.cpp']]]
+  ['getmetar_0',['getMetar',['../namespacetools.html#aa71892cc128ebe609aa0b32d37a2e7f5',1,'tools']]],
+  ['gettextfromimage_1',['getTextFromImage',['../namespacetools.html#aebee2b124a31f2d62f0158dad3e0c233',1,'tools']]]
 ];

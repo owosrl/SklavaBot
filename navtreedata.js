@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "tgbot-cpp", "index.html", [
+  [ "SklavaBot", "index.html", [
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -38,7 +38,8 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ]
+        [ "Variables", "globals_vars.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -46,7 +47,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"commands_8cpp.html"
+"_c_make_c_x_x_compiler_id_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

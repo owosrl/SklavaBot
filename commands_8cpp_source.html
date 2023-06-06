@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tgbot-cpp: lib/src/commands.cpp Source File</title>
+<title>SklavaBot: lib/src/commands.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">tgbot-cpp
+   <div id="projectname">SklavaBot<span id="projectnumber">&#160;0.1.0</span>
    </div>
+   <div id="projectbrief">Telegram Bot in C++</div>
   </td>
  </tr>
  </tbody>
@@ -111,8 +112,8 @@ $(document).ready(function(){initNavTree('commands_8cpp_source.html',''); initRe
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="commands_8cpp.html#a1c168df796a1bd11874325e9a4b0c59f">   20</a></span><span class="keyword">const</span> std::string <a class="code hl_function" href="commands_8cpp.html#a1c168df796a1bd11874325e9a4b0c59f">PARSE_MODE</a>(<span class="stringliteral">&quot;Markdown&quot;</span>);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="commands_8cpp.html#a138fc112f3dcb4aa2c13629030d08ed0">   22</a></span><span class="keyword">const</span> std::string <a class="code hl_variable" href="commands_8cpp.html#a138fc112f3dcb4aa2c13629030d08ed0">HELP_MESSAGE</a> =</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="stringliteral">&quot;Hello, I&#39;m &quot;</span> BOT_NAME <span class="stringliteral">&quot;!\n&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="stringliteral">&quot;I&#39;m a bot created by &quot;</span> BOT_AUTHOR <span class="stringliteral">&quot;!\n&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="stringliteral">&quot;Hello, I&#39;m &quot;</span> <a class="code hl_define" href="config_8hpp.html#a2119355cc35d1790b45365fea04cc00f">BOT_NAME</a> <span class="stringliteral">&quot;!\n&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="stringliteral">&quot;I&#39;m a bot created by &quot;</span> <a class="code hl_define" href="config_8hpp.html#ab08f99c8561ef38f76703ed798da7726">BOT_AUTHOR</a> <span class="stringliteral">&quot;!\n&quot;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="stringliteral">&quot;My commands:\n&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="stringliteral">&quot;`/start` - _start the bot_\n&quot;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="stringliteral">&quot;`/help` - _show this message_\n&quot;</span></div>
@@ -120,8 +121,8 @@ $(document).ready(function(){initNavTree('commands_8cpp_source.html',''); initRe
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="stringliteral">&quot;`/ocr` - _optical Character Recognition with tesseract_\n&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="stringliteral">&quot;`/metar &lt;ICAO Code&gt;` - _get METAR information_\n&quot;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="stringliteral">&quot;My source code is available at &quot;</span> BOT_GITHUB_REPO <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="stringliteral">&quot;Version: &quot;</span> BOT_VERSION <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="stringliteral">&quot;My source code is available at &quot;</span> <a class="code hl_define" href="config_8hpp.html#ac8b4010d2ab2213b7d8a8b984317f7b2">BOT_GITHUB_REPO</a> <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="stringliteral">&quot;Version: &quot;</span> <a class="code hl_define" href="config_8hpp.html#a68ad37a45e5852c7f73fb456c9a6f2a5">BOT_VERSION</a> <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="commands_8cpp.html#a0a0dc29d73e08ce868326e29fdc286f2">   35</a></span><span class="keyword">const</span> std::string <a class="code hl_variable" href="commands_8cpp.html#a0a0dc29d73e08ce868326e29fdc286f2">INFO_MESSAGE</a> = <span class="stringliteral">&quot;System Informations\n\n&quot;</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                 <span class="stringliteral">&quot;*OS*: _&quot;</span></div>
@@ -233,6 +234,10 @@ $(document).ready(function(){initNavTree('commands_8cpp_source.html',''); initRe
 <div class="ttc" id="acommands_8cpp_html_a138fc112f3dcb4aa2c13629030d08ed0"><div class="ttname"><a href="commands_8cpp.html#a138fc112f3dcb4aa2c13629030d08ed0">HELP_MESSAGE</a></div><div class="ttdeci">const std::string HELP_MESSAGE</div><div class="ttdef"><b>Definition</b> <a href="commands_8cpp_source.html#l00022">commands.cpp:22</a></div></div>
 <div class="ttc" id="acommands_8cpp_html_a1c168df796a1bd11874325e9a4b0c59f"><div class="ttname"><a href="commands_8cpp.html#a1c168df796a1bd11874325e9a4b0c59f">PARSE_MODE</a></div><div class="ttdeci">const std::string PARSE_MODE(&quot;Markdown&quot;)</div><div class="ttdoc">Telegram parse mode.</div></div>
 <div class="ttc" id="aconfig_8hpp_html"><div class="ttname"><a href="config_8hpp.html">config.hpp</a></div></div>
+<div class="ttc" id="aconfig_8hpp_html_a2119355cc35d1790b45365fea04cc00f"><div class="ttname"><a href="config_8hpp.html#a2119355cc35d1790b45365fea04cc00f">BOT_NAME</a></div><div class="ttdeci">#define BOT_NAME</div><div class="ttdef"><b>Definition</b> <a href="config_8hpp_source.html#l00004">config.hpp:4</a></div></div>
+<div class="ttc" id="aconfig_8hpp_html_a68ad37a45e5852c7f73fb456c9a6f2a5"><div class="ttname"><a href="config_8hpp.html#a68ad37a45e5852c7f73fb456c9a6f2a5">BOT_VERSION</a></div><div class="ttdeci">#define BOT_VERSION</div><div class="ttdef"><b>Definition</b> <a href="config_8hpp_source.html#l00006">config.hpp:6</a></div></div>
+<div class="ttc" id="aconfig_8hpp_html_ab08f99c8561ef38f76703ed798da7726"><div class="ttname"><a href="config_8hpp.html#ab08f99c8561ef38f76703ed798da7726">BOT_AUTHOR</a></div><div class="ttdeci">#define BOT_AUTHOR</div><div class="ttdef"><b>Definition</b> <a href="config_8hpp_source.html#l00008">config.hpp:8</a></div></div>
+<div class="ttc" id="aconfig_8hpp_html_ac8b4010d2ab2213b7d8a8b984317f7b2"><div class="ttname"><a href="config_8hpp.html#ac8b4010d2ab2213b7d8a8b984317f7b2">BOT_GITHUB_REPO</a></div><div class="ttdeci">#define BOT_GITHUB_REPO</div><div class="ttdef"><b>Definition</b> <a href="config_8hpp_source.html#l00009">config.hpp:9</a></div></div>
 <div class="ttc" id="ametar_8hpp_html"><div class="ttname"><a href="metar_8hpp.html">metar.hpp</a></div></div>
 <div class="ttc" id="anamespace_bot_html"><div class="ttname"><a href="namespace_bot.html">Bot</a></div><div class="ttdef"><b>Definition</b> <a href="commands_8hpp_source.html#l00006">commands.hpp:6</a></div></div>
 <div class="ttc" id="anamespace_bot_html_a343f4e2a25f19b440a2a820719692934"><div class="ttname"><a href="namespace_bot.html#a343f4e2a25f19b440a2a820719692934">Bot::register_handlers</a></div><div class="ttdeci">void register_handlers(TgBot::Bot *bot)</div><div class="ttdoc">Register all the handlers for bot commands.</div><div class="ttdef"><b>Definition</b> <a href="commands_8cpp_source.html#l00071">commands.cpp:71</a></div></div>
@@ -251,7 +256,7 @@ $(document).ready(function(){initNavTree('commands_8cpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_a065c5f60305fee3569f887679366939.html">src</a></li><li class="navelem"><a class="el" href="commands_8cpp.html">commands.cpp</a></li>
-    <li class="footer">Generated on Tue Jun 6 2023 13:09:51 for tgbot-cpp by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">Generated on Tue Jun 6 2023 18:20:31 for SklavaBot by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>
